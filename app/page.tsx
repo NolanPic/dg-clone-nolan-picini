@@ -1,95 +1,38 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    <>
+      <h1 style={{ fontSize: "60px", textAlign: "center" }}>
+        Disciple-Making in a Busy Season
+      </h1>
+      <div
+        style={{
+          maxWidth: "700px",
+          margin: "4rem auto",
+          lineHeight: "1.9",
+          fontSize: "18px",
+          letterSpacing: "0.02em",
+          fontWeight: "300",
+        }}
+      >
+        <p style={{ marginBottom: "22.4px" }}>
+          I can remember a time when disciple-making sounded more doable. My
+          days had more margin for late nights, spontaneous meals, and extended
+          fellowship. Fewer responsibilities demanded my time. Discipling others
+          in a life-on-life way didn’t sound easy, but it did sound more
+          manageable than it does now.
+        </p>
+        <p>
+          Businessman, husband, mother of young ones — you probably know what I
+          mean. You used to say yes to nearly every invitation. You used to send
+          those invitations. Now saying yes often means saying no to some part
+          of life that seems nonnegotiable. And for as much as you’ve tried to
+          invite others into your normal routines — aiming for overlap, not
+          addition — the fact still stands: Discipling others is harder than it
+          once was.
+        </p>
+      </div>
+    </>
   );
 }
