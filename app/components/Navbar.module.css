@@ -1,9 +1,12 @@
 .navbar {
-    position: relative;
+    position: sticky;
+    top: 0;
     height: 63px;
     padding: 0 21px;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    background-color: var(--white);
+    z-index: 2;
 }
 
 .navbarContent {
@@ -35,7 +38,6 @@
 
 .search {
     position: absolute;
-    z-index: 2;
     top: 0;
     bottom: 0;
     left: 0;

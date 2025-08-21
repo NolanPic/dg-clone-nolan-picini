@@ -1,6 +1,5 @@
 .menu {
     background-color: var(--background-dark);
-    overflow-y: scroll;
     color: var(--text-muted);
     font: 20px var(--font-roboto);
     font-weight: 300;

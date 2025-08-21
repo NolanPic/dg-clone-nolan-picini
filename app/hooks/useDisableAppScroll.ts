@@ -1,25 +1,24 @@
 "use client";
 
 import { useEffect } from "react";
+import { useNavigation } from "@/app/providers/NavigationProvider";
 
 export default function useDisableAppScroll(disableScroll: boolean): void {
+  const { scrollContainerRef } = useNavigation();
+
   useEffect(() => {
-    const elements = document.querySelectorAll("body, html");
+    const scrollContainer = scrollContainerRef.current;
 
-    const setOverflow = (overflow: string) => {
-      elements.forEach((elem) => {
-        (elem as HTMLElement).style.overflow = overflow;
-      });
-    };
-
-    if (disableScroll) {
-      setOverflow("hidden");
+    if(!scrollContainer) return;
+    
+    if(disableScroll) {
+      scrollContainer.style.overflow = "hidden";
     } else {
-      setOverflow("");
+      scrollContainer.style.overflow = "";
     }
 
     return () => {
-      setOverflow("");
+      scrollContainer.style.overflow = "";
     };
   }, [disableScroll]);
 }

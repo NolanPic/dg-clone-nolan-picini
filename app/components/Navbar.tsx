@@ -9,12 +9,30 @@ import hamburger from "@/public/hamburger.svg";
 import close from "@/public/close.svg";
 import { useState, useRef, useEffect } from "react";
 import useDisableAppScroll from "@/app/hooks/useDisableAppScroll";
-import { motion, AnimatePresence, cubicBezier } from "framer-motion";
+import {
+  motion,
+  AnimatePresence,
+  cubicBezier,
+  useMotionValueEvent,
+  useScroll,
+} from "framer-motion";
 import { useNavigation } from "@/app/providers/NavigationProvider";
 
 export default function Navbar() {
   const searchbarRef = useRef<HTMLInputElement>(null);
-  const { toggleMenu, searchOpen, setSearchOpen } = useNavigation();
+  const { toggleMenu, searchOpen, setSearchOpen, scrollContainerRef } =
+    useNavigation();
+  const [navHidden, setNavHidden] = useState(false);
+  const { scrollY } = useScroll({ container: scrollContainerRef });
+  const lastYRef = useRef(0);
+
+  useMotionValueEvent(scrollY, "change", (y) => {
+    const diff = y - lastYRef.current;
+    if (Math.abs(diff) > 400) {
+      setNavHidden(diff > 0);
+      lastYRef.current = y;
+    }
+  });
 
   useEffect(() => {
     if (searchOpen && searchbarRef.current) {
@@ -26,7 +44,16 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={styles.navbar}>
+      <motion.nav
+        initial={{ y: 0 }}
+        animate={{ y: navHidden ? "-100%" : 0 }}
+        exit={{ y: navHidden ? 0 : "-100%" }}
+        transition={{
+          duration: 0.3,
+          ease: cubicBezier(0.21, 0.94, 0.25, 0.94),
+        }}
+        className={styles.navbar}
+      >
         <AnimatePresence>
           {searchOpen && (
             <motion.div
@@ -107,7 +134,7 @@ export default function Navbar() {
             </button>
           </motion.div>
         </motion.div>
-      </nav>
+      </motion.nav>
     </>
   );
 }

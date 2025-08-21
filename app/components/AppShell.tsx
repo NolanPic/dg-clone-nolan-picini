@@ -1,6 +1,6 @@
 "use client";
 
-import MenuProvider, {
+import NavigationProvider, {
   useNavigation,
 } from "@/app/providers/NavigationProvider";
 import Navbar from "./Navbar";
@@ -9,11 +9,17 @@ import styles from "./AppShell.module.css";
 import classNames from "classnames";
 import { cubicBezier, motion, AnimatePresence } from "framer-motion";
 import Backdrop from "./common/Backdrop";
+import useDisableAppScroll from "@/app/hooks/useDisableAppScroll";
 
 function ShellInner({ children }: { children: React.ReactNode }) {
-  const { menuOpen, searchOpen, setSearchOpen } = useNavigation();
+  const { menuOpen, searchOpen, setSearchOpen, scrollContainerRef } =
+    useNavigation();
+  useDisableAppScroll(menuOpen || searchOpen);
   return (
-    <div className={classNames(styles.main, menuOpen && styles.menuOpen)}>
+    <div
+      ref={scrollContainerRef as React.RefObject<HTMLDivElement>}
+      className={classNames(styles.main, menuOpen && styles.menuOpen)}
+    >
       <motion.div
         initial={{ x: 0 }}
         animate={{ x: menuOpen ? "calc(var(--menuWidth) * -1)" : 0 }}
@@ -51,8 +57,8 @@ function ShellInner({ children }: { children: React.ReactNode }) {
 
 export default function AppShell({ children }: { children: React.ReactNode }) {
   return (
-    <MenuProvider>
+    <NavigationProvider>
       <ShellInner>{children}</ShellInner>
-    </MenuProvider>
+    </NavigationProvider>
   );
 }

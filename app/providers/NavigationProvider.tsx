@@ -1,7 +1,6 @@
 "use client";
 
-import { createContext, useContext, useMemo, useState } from "react";
-import useDisableAppScroll from "@/app/hooks/useDisableAppScroll";
+import { createContext, useContext, useMemo, useState, useRef } from "react";
 
 type NavigationContextValue = {
   menuOpen: boolean;
@@ -10,6 +9,7 @@ type NavigationContextValue = {
   searchOpen: boolean;
   setSearchOpen: (open: boolean) => void;
   toggleSearch: () => void;
+  scrollContainerRef: React.RefObject<HTMLElement | null>;
 };
 
 const NavigationContext = createContext<NavigationContextValue | undefined>(
@@ -31,8 +31,7 @@ export default function NavigationProvider({
 }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
-
-  useDisableAppScroll(menuOpen);
+  const scrollContainerRef = useRef<HTMLElement | null>(null);
 
   const value = useMemo<NavigationContextValue>(
     () => ({
@@ -42,6 +41,7 @@ export default function NavigationProvider({
       searchOpen,
       setSearchOpen,
       toggleSearch: () => setSearchOpen((prev) => !prev),
+      scrollContainerRef,
     }),
     [menuOpen, searchOpen, setMenuOpen, setSearchOpen]
   );
