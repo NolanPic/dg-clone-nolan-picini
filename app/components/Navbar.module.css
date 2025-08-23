@@ -6,7 +6,7 @@
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
     overflow: hidden;
     background-color: var(--white);
-    z-index: 2;
+    z-index: 3;
 }
 
 .navbarContent {

@@ -1,0 +1,160 @@
+{
+
+    "featuredArticle": {
+        "title": "How Do Missionaries Embody the Message?",
+        "type": "Article",
+        "publicationDate": "Aug 22, 2025",
+        "image": "how-do-missionaries-embody-the-message.avif",
+        "authorName": "Brooks Buser",
+        "authorAvatar": "brooks-buser.avif"
+    },
+
+    "theme": {
+        "title": "Desiring God in the Dark",
+        "articles": [
+            {
+                "title": "When Joy Feels Unthinkable",
+                "type": "Article",
+                "publicationDate": "Aug 17, 2025",
+                "shortDate": "Aug 17",
+                "image": "when-joy-feels-unthinkable.avif",
+                "authorName": "Marshall Segal"
+              },
+              {
+                "title": "When Weakness Overwhelms Us",
+                "type": "Article",
+                "publicationDate": "Aug 20, 2025",
+                "shortDate": "Aug 20",
+                "image": "when-weakness-overwhelms-us.avif",
+                "authorName": "Joni Eareckson Tada"
+              },
+              {
+                "title": "When Dearest Dreams Shatter",
+                "type": "Article",
+                "publicationDate": "Aug 24, 2025",
+                "shortDate": "Aug 24",
+                "image": "when-dearest-dreams-shatter.avif",
+                "authorName": "Clinton Manley",
+                "upcoming": true
+              }
+        ]
+    },
+    
+    "recentArticles": [
+        {
+          "title": "Divine Appointments and Eternal Joy",
+          "subtitle": "",
+          "type": "Light + Truth",
+          "publicationDate": "Aug 20, 2025",
+          "shortDate": "Aug 20",
+          "image": "divine-appointments-and-eternal-joy.avif",
+          "authorName": "John Piper",
+          "authorAvatar": "john-piper.avif",
+          "description": "Can God redirect your day for someone’s eternity? In this episode of Light + Truth, John Piper opens Acts 8:26–40 to show how Spirit-led detours can yield everlasting joy." 
+        },
+        {
+          "title": "The High Price of Watching Nudity",
+          "subtitle": "",
+          "type": "Ask Pastor John",
+          "publicationDate": "Aug 21, 2025",
+          "shortDate": "Aug 21",
+          "image": "the-high-price-of-watching-nudity.avif",
+          "authorName": "John Piper",
+          "authorAvatar": "john-piper.avif",
+          "description": "In a day when sexualized content seems to be everywhere, including in many shows and movies, Pastor John gives twelve reasons to never watch nudity." 
+        },
+        {
+          "title": "When Wonders Overshadow Christ",
+          "subtitle": "",
+          "type": "Light + Truth",
+          "publicationDate": "Aug 20, 2025",
+          "shortDate": "Aug 20",
+          "image": "when-wonders-overshadow-christ.avif",
+          "authorName": "John Piper",
+          "authorAvatar": "john-piper.avif",
+          "description": "What’s missing from counterfeit faith? In this episode of Light + Truth, John Piper opens Acts 8:9–24 to expose a belief amazed by wonders yet blind to sin and the worth of Christ."
+        },
+        {
+          "title": "Disciple-Making in a Busy Season",
+          "subtitle": "",
+          "type": "Article",
+          "publicationDate": "Aug 19, 2025",
+          "shortDate": "Aug 19",
+          "image": "disciple-making-in-a-busy-season.avif", 
+          "authorName": "Scott Hubbard",
+          "authorAvatar": "scott-hubbard.avif",
+          "description": "Disciple-making seemed more manageable before marriage, kids, and a full-time job. How can we still obey Jesus’s call in a life with little room?"
+        },
+        {
+          "title": "Why False Teaching Is Like Gangrene",
+          "subtitle": "2 Timothy 2:16–19, Part 1",
+          "type": "Look at the Book",
+          "publicationDate": "Aug 19, 2025",
+          "shortDate": "Aug 19",
+          "image": "why-false-teaching-is-like-gangrene.avif",
+          "authorName": "John Piper",
+          "authorAvatar": "john-piper.avif",
+          "description": "Irreverent babble leads only to more ungodliness. John Piper warns against teaching that is as poisonous as it is empty."
+        },
+        {
+          "title": "We Can’t Endure on Our Own",
+          "subtitle": "",
+          "type": "Ask Pastor John",
+          "publicationDate": "Aug 18, 2025",
+          "shortDate": "Aug 18",
+          "image": "we-cant-endure-on-our-own.avif",
+          "authorName": "John Piper",
+          "authorAvatar": "john-piper.avif",
+          "description": "What might Simon of Cyrene teach us about supporting one another in trials? Pastor John digs into the perseverance of the saints and the church’s crucial role."
+        },
+        {
+          "title": "The Servant Called Death",
+          "subtitle": "",
+          "type": "Light + Truth",
+          "publicationDate": "Aug 18, 2025",
+          "shortDate": "Aug 18",
+          "image": "the-servant-called-death.avif",
+          "authorName": "John Piper",
+          "authorAvatar": "john-piper.avif",
+          "description": "What does Satan want death to do to you? In this episode of Light + Truth, John Piper opens Acts 7:54–8:1 to show how God makes death serve his people, not destroy them."
+        },
+        {
+          "title": "Finally Done with Porn",
+          "subtitle": "",
+          "type": "Article",
+          "publicationDate": "Aug 16, 2025",
+          "shortDate": "Aug 16",
+          "image": "finally-done-with-porn.avif",
+          "authorName": "Greg Salazar",
+          "authorAvatar": "greg-salazar.avif",
+          "description": "Temptations to view pornography may be new, but fighting lust is not. What wisdom can an old saint offer us as we wage war against sexual sin?"
+        },
+        {
+          "title": "God’s Mission Triumphs Through Prayerful Suffering",
+          "subtitle": "",
+          "type": "Message",
+          "publicationDate": "Aug 16, 2025",
+          "shortDate": "Aug 16",
+          "image": "gods-mission-triumphs-through-prayerful-suffering.avif",
+          "authorName": "John Piper",
+          "authorAvatar": "john-piper.avif",
+          "description": "As Jesus bleeds in Gethsemane and then submits to arrest, we see that the mission of God triumphs through prayerful suffering, not the self-defending sword."
+        },
+        {
+          "title": "How Do You Rightly Handle the Word of Truth?",
+          "subtitle": "2 Timothy 2:14–15, Part 2",
+          "type": "Look at the Book",
+          "publicationDate": "Aug 16, 2025",
+          "shortDate": "Aug 16",
+          "image": "how-do-you-rightly-handle-the-word-of-truth.avif",
+          "authorName": "John Piper",
+          "authorAvatar": "john-piper.avif",
+          "description": "How do we teach the word of God in a manner approved by God? John Piper emphasizes the importance of faith and grace in the work of ministry."
+        }
+      ]
+}
+
+
+
+
+

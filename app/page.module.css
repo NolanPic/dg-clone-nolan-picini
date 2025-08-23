@@ -1,0 +1,10 @@
+.home {
+    max-width: 682px;
+    margin: 0 auto;
+}
+
+@media (min-width: 980px) {
+    .home {
+        max-width: 1358px;
+    }
+}

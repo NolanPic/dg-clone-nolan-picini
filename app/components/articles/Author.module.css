@@ -1,0 +1,14 @@
+.author {
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
+
+     & img {
+        border-radius: 50%;
+     }
+
+     & small {
+        font-size: 0.8125rem;
+        font-family: var(--font-roboto);
+     }
+}

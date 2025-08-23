@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@uidotdev/usehooks": "^2.4.1",
     "classnames": "^2.5.1",
     "motion": "^12.23.12",
     "next": "15.4.7",

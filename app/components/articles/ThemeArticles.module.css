@@ -1,0 +1,146 @@
+.themeArticlesDesktop {
+  display: none;
+}
+
+.themeArticlesMobile {
+    background-color: var(--background-muted);
+    font-family: var(--font-roboto);
+    padding: 1.75rem var(--gutter);
+
+    .inner {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    .themeTitle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 18px;
+      border-bottom: 1px solid var(--text-muted);
+      margin-bottom: 2.5rem;
+    
+      & p {
+        flex-basis: 85%;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid var(--accent);
+      }
+    
+      & span {
+        display: block;
+        font-weight: 700;
+        margin-top: 0.25rem;
+      }
+      
+      & img {
+        align-self: flex-start;
+      }
+    }
+    
+    .articles {
+      display: flex;
+      flex-direction: column;
+      gap: 2.75rem;
+    }
+  }
+
+@media (min-width: 620px) {
+  .themeArticlesMobile {
+    display: none;
+  }
+
+  .themeArticlesDesktop {
+    display: block;
+    font-family: var(--font-roboto);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 2.5rem;
+    margin: 0 var(--gutter) 2.75rem;
+  }
+
+  .imageWrapper {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    max-width: 70%;
+    margin-bottom: 2.75rem;
+  }
+
+  .themeTitle {
+    & small {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+    }
+
+    & p {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+    }
+  }
+
+  .articles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article {
+    display: flex;
+    gap: 0.7rem;
+    padding: 1.25rem 0;
+
+    & small {
+      font-size: 12px;
+      font-weight: 300;
+    }
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid var(--border);
+    }
+
+    &.upcoming {
+      opacity: 0.5;
+    }
+  }
+
+  .details {
+    & h2 {
+      font-size: 18px;
+      margin-bottom: 0.2rem;
+      line-height: 0.9;
+    }
+  }
+
+  .viewAll {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 13px;
+    font-weight: 400;
+
+    & img {
+      filter: brightness(0);
+    }
+  }
+}
+
+@media (min-width: 980px) {
+  .inner {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
+
+  .imageWrapper {
+    min-width: 285px;
+    align-self: center;
+  }
+
+  .copy {
+    position: relative;
+    left: 1rem;
+  }
+
+}
