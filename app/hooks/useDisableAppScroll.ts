@@ -20,7 +20,7 @@ export default function useDisableAppScroll(disableScroll: boolean): void {
     return () => {
       scrollContainer.style.overflow = "";
     };
-  }, [disableScroll]);
+  }, [disableScroll, scrollContainerRef]);
 }
 
 

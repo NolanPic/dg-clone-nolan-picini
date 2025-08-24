@@ -9,6 +9,8 @@
   --muted: #828282;
 
   --gutter: 1.5rem;
+  --menuWidth: 100%;
+  --card-content-gutter: 1rem;
 }
 
 html,
@@ -56,12 +58,20 @@ a {
 @media (min-width: 620px) {
   :root {
     --gutter: 2.5rem;
+    --card-content-gutter: 1.2rem;
+  }
+}
+
+@media (min-width: 640px) {
+  :root {
+    --menuWidth: 360px;
   }
 }
 
 @media (min-width: 980px) {
   :root {
     --gutter: 3.75rem;
+    --card-content-gutter: 1.375rem;
   }
 
   .section {

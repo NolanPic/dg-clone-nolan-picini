@@ -5,14 +5,10 @@ import ThemeArticles from "./components/articles/ThemeArticles";
 import RecentArticles from "./components/articles/RecentArticles";
 import SubscribeCTA from "./components/SubscribeCTA";
 import Footer from "./components/Footer";
+import { readJson } from "./data/readJson";
 
-export default async function Home() {
-  const baseUrl = process.env.BASE_URL ?? "http://localhost:3000";
-  const apiUrl = `${baseUrl}/api`;
-
-  const data: ArticleData = await fetch(`${apiUrl}/articles`).then((res) =>
-    res.json()
-  );
+export default function Home() {
+  const data = readJson<ArticleData>("./articles/articles.json");
 
   return (
     <div className={styles.home}>
