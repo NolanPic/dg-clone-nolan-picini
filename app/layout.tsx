@@ -18,6 +18,9 @@ const geistMono = Merriweather({
 export const metadata: Metadata = {
   title: "Desiring God",
   description: "God is most glorified in us when we are most satisfied in him.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
