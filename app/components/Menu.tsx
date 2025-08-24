@@ -50,9 +50,11 @@ export default function Menu() {
             <Link href="/">Podcasts</Link>
           </li>
         </ol>
-        <small>
-          Filter resources by <Image src={arrowRight} alt="Arrow right" />
-        </small>
+        <Link href="/">
+          <small>
+            Filter resources by <Image src={arrowRight} alt="Arrow right" />
+          </small>
+        </Link>
       </section>
       <section className={styles.featuresSection}>
         <ol>
@@ -110,9 +112,9 @@ export default function Menu() {
         </p>
 
         <div className={styles.buttons}>
-          <button>About</button>
-          <button>Account</button>
-          <button>Give</button>
+          <Link href="/">About</Link>
+          <Link href="/">Account</Link>
+          <Link href="/">Give</Link>
         </div>
       </section>
     </nav>

@@ -20,7 +20,7 @@ export default function RecentArticles({
   }
 
   return (
-    <div className={styles.recentArticles}>
+    <div className={`${styles.recentArticles} section`}>
       <Link href="/ " className={styles.recentHeading}>
         <p>Recent</p>
         <div className={styles.arrowWrapper}>
@@ -41,6 +41,17 @@ export default function RecentArticles({
             className={styles.article}
           />
         ))}
+      </div>
+      <div className={styles.moreBtnWrapper}>
+        <Link href="/" className={styles.moreBtn}>
+          More{" "}
+          <Image
+            src="/arrow-right.svg"
+            alt="arrow-right"
+            width={18}
+            height={18}
+          />
+        </Link>
       </div>
     </div>
   );

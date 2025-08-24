@@ -126,6 +126,12 @@
 }
 
 @media (min-width: 980px) {
+  .themeArticlesDesktop {
+    margin: 0 auto 2.75rem;
+    max-width: 1520px;
+    padding: 0 var(--gutter) 2.75rem;
+  }
+
   .inner {
     max-width: 100%;
     display: grid;

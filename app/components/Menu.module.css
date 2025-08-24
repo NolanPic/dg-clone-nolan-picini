@@ -82,7 +82,7 @@
     line-height: 1.75;
 
     & p {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.75rem;
     }
 }
 
@@ -90,19 +90,28 @@
     display: flex;
     border: 1px solid var(--text-muted);
 
-    & button {
+    & a {
         background: inherit;
         border: none;
         cursor: pointer;
         color: inherit;
         text-transform: uppercase;
-        font-weight: 200;
+        font-weight: 400;
         font-size: 12px;
-        padding: 0.5rem 0;
+        padding: 0.3rem 0;
         flex: 1;
+        text-align: center;
     }
 
-    & button:not(:last-of-type) {
+    & a:not(:last-of-type) {
         border-right: 1px solid var(--text-muted);
+    }
+}
+
+.menu a {
+    transition: color 0.15s ease-in-out;
+
+    &:hover {
+        color: var(--white);
     }
 }

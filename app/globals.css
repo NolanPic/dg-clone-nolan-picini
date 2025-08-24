@@ -47,6 +47,12 @@ a {
   text-decoration: none;
 }
 
+/* Sections */
+.section {
+  max-width: 682px;
+  margin: 0 auto;
+}
+
 @media (min-width: 620px) {
   :root {
     --gutter: 2.5rem;
@@ -56,6 +62,10 @@ a {
 @media (min-width: 980px) {
   :root {
     --gutter: 3.75rem;
+  }
+
+  .section {
+    max-width: 1520px;
   }
 }
 

@@ -73,6 +73,11 @@
         flex-direction: column;
         border: 1px solid var(--border);
         height: 452px;
+        transition: box-shadow 0.2s ease-in-out;
+
+        &:hover {
+            box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+        }
     }
 
     .copy {

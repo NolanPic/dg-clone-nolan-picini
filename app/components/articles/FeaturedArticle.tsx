@@ -7,14 +7,13 @@ import Link from "next/link";
 export default function FeaturedArticle({ article }: { article: Article }) {
   return (
     <Link href="/">
-      <article className={styles.featuredArticle}>
+      <article className={`${styles.featuredArticle}`}>
         <div className={styles.inner}>
           <div className={styles.imageWrapper}>
             <Image
               src={`/articles/${article.image}`}
               alt={article.title}
               fill
-              // sizes="(min-width: 620px) 538px, 302px"
             />
           </div>
           <div className={styles.copy}>

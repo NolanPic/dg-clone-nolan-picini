@@ -1,0 +1,32 @@
+.subscribeForm {
+    display: flex;
+
+    & input,
+    & button {
+        height: 38px;
+        padding: 0 1rem;
+    }
+
+    & input {
+        border: 1px solid var(--text-muted);
+    }
+
+    & button {
+        background-color: var(--accent);
+        color: var(--white);
+        border: none;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 980px) {
+    .subscribeForm {
+        & input {
+            width: 300px;
+        }
+
+        & button {
+            width: 130px;
+        }
+    }
+}

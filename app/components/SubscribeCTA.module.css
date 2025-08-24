@@ -1,0 +1,108 @@
+.inner {
+    padding: 4.25rem var(--gutter) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: var(--font-roboto);
+    text-align: center;
+
+    & h1 {
+        font-size: 30px;
+        max-width: 214px;
+    }
+}
+
+.form {
+    padding: 2rem 0;
+}
+
+.phone {
+    position: relative;
+    width: 260px;
+    height: 300px;
+    background-image: url("/iphone16.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+}
+
+.email {
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    width: 230px;
+    height: 270px;
+    overflow: scroll;
+
+    & img {
+        object-fit: cover;
+        object-position: top;
+        width: 100% !important;
+        height: 560px !important;
+    }
+}
+
+@media (min-width: 620px) {
+    .subscribeCTA {
+        background-color: var(--background-muted);
+    }
+
+    .content {
+        & h1 {
+            font-size: 36px;
+            max-width: 280px;
+            line-height: 1.1;
+        }
+        & p {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (min-width: 980px) {
+    .inner {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 5rem;
+        margin: 0 auto;
+        justify-items: end;
+        max-width: 1100px;
+    }
+
+    .content {
+        margin: 0;
+        align-items: flex-end;
+        text-align: right;
+        width: 100%;
+
+        & h1 {
+            font-size: 42px;
+            max-width: 300px;
+        }
+    }
+
+    .phone {
+        width: 360px;
+        height: 450px;
+    }
+
+    .email {
+        width: 314px;
+        height: 375px;
+        top: 70px;
+        left: 20px;
+
+        & img {
+            height: 777px !important;
+        }
+    }
+}
