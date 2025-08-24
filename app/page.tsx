@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
 import FeaturedArticle from "./components/articles/FeaturedArticle";
-import { ArticleData } from "../../types/global";
+import { ArticleData } from "../types/global";
 import ThemeArticles from "./components/articles/ThemeArticles";
 import RecentArticles from "./components/articles/RecentArticles";
 import SubscribeCTA from "./components/SubscribeCTA";

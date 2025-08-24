@@ -1,4 +1,4 @@
-import { Article } from "../../../../types/global";
+import { Article } from "../../../types/global";
 import Image from "next/image";
 import Author from "./Author";
 import styles from "./FeaturedArticle.module.css";

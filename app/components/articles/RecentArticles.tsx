@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArticleData } from "../../../../types/global";
+import { ArticleData } from "../../../types/global";
 import ArticleCard from "./ArticleCard";
 import styles from "./RecentArticles.module.css";
 import Image from "next/image";

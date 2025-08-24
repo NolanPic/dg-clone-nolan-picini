@@ -1,4 +1,4 @@
-import { Article } from "../../../../types/global";
+import { Article } from "../../../types/global";
 import Image from "next/image";
 import styles from "./ArticleCard.module.css";
 import classNames from "classnames";

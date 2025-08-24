@@ -1,5 +1,5 @@
 import styles from "./ThemeArticles.module.css";
-import { ArticleData } from "../../../../types/global";
+import { ArticleData } from "../../../types/global";
 import Image from "next/image";
 import ArticleCard from "./ArticleCard";
 import Link from "next/link";
