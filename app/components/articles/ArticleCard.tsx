@@ -71,11 +71,12 @@ export default function ArticleCard({
           </p>
           <p className={styles.excerpt}>{article.description}</p>
         </div>
-        <Author
-          className={styles.author}
-          authorName={article.authorName}
-          authorAvatar={article.authorAvatar}
-        />
+        <div className={styles.author}>
+          <Author
+            authorName={article.authorName}
+            authorAvatar={article.authorAvatar}
+          />
+        </div>
       </article>
     </Link>
   );
