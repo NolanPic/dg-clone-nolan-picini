@@ -1,7 +1,9 @@
 .main {
     position: relative;
     height: 100vh;
+    overflow: hidden;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .menu {
@@ -10,6 +12,7 @@
     bottom: 0;
     right: 0;
     left: 0;
+    overflow-y: auto;
 }
 
 @media (min-width: 640px) {
