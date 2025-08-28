@@ -30,8 +30,8 @@
 .copy {
     & .title {
         font-size: 18px;
+        margin-right: 1rem;
         margin-bottom: 0.5rem;
-        max-width: 278px;
         line-height: 1.2;
     }
     
@@ -85,6 +85,7 @@
 
         & .title {
             line-height: 1.5;
+            margin-right: 0;
         }
 
         .date {
